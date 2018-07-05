@@ -9,7 +9,7 @@
 
 <?php
 include('db.php');
-function createRandomPassword() {
+function createRandomTransactionNumber() {
 	$chars = "QWERTYUIOPLKJHGFDSAZXCVBNM0123456789";
 	srand((double)microtime()*1000000);
 	$i = 0;
@@ -22,7 +22,7 @@ function createRandomPassword() {
 	}
 	return $pass;
 }
-$confirmation = createRandomPassword();
+$confirmation = createRandomTransactionNumber();
 $fname=$_POST['fname'];
 $lname=$_POST['lname'];
 $route_list=$_POST['route_list'];
